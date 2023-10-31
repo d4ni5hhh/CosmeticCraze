@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetic Craze</title>
+  <link rel="icon" type="image/x-icon" href="image/CosmeticCraze.png">
+  <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <img src="image/CosmeticCraze.png" height="20">
+        <div class="right">
+          <h3>ALL ABOUT MAKEUP</h3>
+          <a id="modal-btn" class="top"><img src="image/trophy.png" alt=""></a>
+        </div>
+      </header>
+      <div class="content flex">
+        <div class="filter">
+          <div class="filter-content">
+            <strong><a class="filter">Filter Product</a></strong>
+            <!-- Filter -->
+            <div class="filter-optn">
+              <select name="type" id="type" oninput="category()">
+                <option value="">Product Type</option>
+                <option value="blush">Blush</option>
+                <option value="bronzer">Bronzer</option>
+                <option value="eyebrow">Eyebrow</option>
+                <option value="eyeliner">Eyeliner</option>
+                <option value="eyeshadow">Eyeshadow</option>
+                <option value="foundation">Foundation</option>
+                <option value="lip_liner">Lip Liner</option>
+                <option value="lipstick">Lipstick</option>
+                <option value="mascara">Mascara</option>
+                <option value="nail_polish">Nail Polish</option>
+              </select>
+              <select name="category" id="category">
+                <option value="">Product Category</option>
+              </select>
+              <select name="tag" id="tag">
+                <option value="">Product Tag</option>
+              </select>
+              <div id="double">
+                <input type="number" id="minPrice" min="0" placeholder="Min Price">
+                <input type="number" id="maxPrice" min="0" placeholder="Max Price">
+              </div>
+              <div id="double">
+                <input type="number" id="minRating" min="0" max="5" placeholder="Min Rating">
+                <input type="number" id="maxRating" min="0" max="5" placeholder="Max Rating">
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="footer">
+            <div class="icon-footer">
+              <a onclick="window.open('https://github.com/d4ni5hhh','_blank')"><img src="image/github.png"></a>
+              <a onclick="window.open('https://instagram.com/d4ni5hhh','_blank')"><img src="image/instagram.png"></div></a>
+            <a id="text" href="">@ 2023 COPYRIGHT D4NI5HHH</a>
+          </div>
+        </div>
+        <div class="search">
+          <!-- Search Bar -->
+          <div id="search-input">
+            <input id="search" type="text" name="product" placeholder="Product Name"><button id="search-btn"><strong>SEARCH</strong></button>
+          </div>
+          <!-- Product Page-->
+          <div id="pagination"></div>
+          <!-- Product List -->
+          <div class="product" id="product"></div>
+          </div>
+        </div>
+      </div>
+      <div id="search">
+        
+      </div>
+    </div>
+    <!-- PopUp Top 5 Product -->
+    <div id="modal">
+      <div id="top-product">
+        <center><h1>TOP 5 PRODUCT</h1></center>
+        <table id="top-product">
+          <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Action</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- PopUp Product Detail -->
+    <div id="modal-product" class="">
+      <div id="product">
+        <div id="image">
+          <div id="image-container"><img onerror="this.src='image/404.png'" alt=""></div>
+        </div>
+        <div id="description">
+          <div id="top-desc"> 
+            <h3 id="name"></h3><h3 id="price"></h3>
+          </div>
+          <div id="body-desc"></div>
+        </div>
+        <div id="btn">
+          <button id="add"><img src="image/love.png" alt=""></button>
+          <button id="shop"><img src="image/cart.png"></button>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="js/category.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/api.js"></script>
+</html>
