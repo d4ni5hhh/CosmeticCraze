@@ -1,2 +1,4 @@
 # CosmeticCraze
+CosmeticCrazze is a vibrant online platform dedicated to all things beauty and cosmetics. Offering a wide array of makeup, skincare, and haircare products, CosmeticCrazze aims to cater to beauty enthusiasts of all ages and preferences. With a user-friendly interface and convenient shopping experience, customers can explore an extensive selection of top brands and trending beauty items. Whether you're looking for the latest makeup trends, skincare essentials, or haircare solutions, CosmeticCrazze strives to be your one-stop destination for all your beauty needs. With regular updates on new arrivals and exclusive deals, CosmeticCrazze is committed to helping you look and feel your best every day
+
 Application: https://mega.nz/file/lfomFBjT#eL8sduY_vCpib9UA-WzfBOCYphvHS8QrY_q6mF7uxuQ
